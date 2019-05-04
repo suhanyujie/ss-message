@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::namespace('Message')->group(function () {
+    Route::get('/index', "IndexController@index");
+});

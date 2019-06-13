@@ -13,6 +13,10 @@ use App\Http\Controllers\Controller;
 
 class IndexController extends Controller
 {
+    /**
+     * /index
+     * @return array
+     */
     public function index()
     {
         return [

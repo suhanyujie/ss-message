@@ -39,7 +39,8 @@ class ExchangeRateController extends Controller
         $shouldRes = bcdiv($salaryAmount,$salaryRate, 4);
         $actualRes = bcdiv($salaryAmount,$currentRate, 4);
         $diffAmount = bcsub($shouldRes, $actualRes, 4);
-
-        var_dump($shouldRes, $actualRes, $diffAmount);die;
+        echo "shouldRes:{$shouldRes}<br>";
+        echo "actualRes:{$actualRes}<br>";
+        echo "diffAmount:{$diffAmount}<br>";
     }
 }

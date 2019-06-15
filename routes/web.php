@@ -18,3 +18,8 @@ Route::get('/', function () {
 Route::namespace('Message')->group(function () {
     Route::get('/index', "IndexController@index");
 });
+
+Route::namespace('Tool')->group(function () {
+    Route::post('/tool/ex/count', "ExchangeRateController@count");
+    Route::get('/tool/ex', "ExchangeRateController@index");
+});

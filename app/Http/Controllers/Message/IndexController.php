@@ -19,9 +19,6 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return [
-            'status'=>1,
-            'msg'=>'for index...',
-        ];
+        return view('message.index.index');
     }
 }

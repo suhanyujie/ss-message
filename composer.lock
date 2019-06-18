@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b742804b62340319fb5e6ef87a50f4aa",
-    "content-hash": "f685cc3b75ddab98e6e01b1adabdbde8",
+    "hash": "0760a0adaa264eab757fc336aaad160d",
+    "content-hash": "48a56c57c004a0bb15b6626f4b5a3b68",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3593,6 +3593,58 @@
                 "environment"
             ],
             "time": "2019-03-06 09:39:45"
+        },
+        {
+            "name": "workerman/workerman",
+            "version": "v3.5.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/walkor/Workerman.git",
+                "reference": "4e5c24073b431fd950287efbfb5cc9b4c0fc7367"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/walkor/Workerman/zipball/4e5c24073b431fd950287efbfb5cc9b4c0fc7367",
+                "reference": "4e5c24073b431fd950287efbfb5cc9b4c0fc7367",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "suggest": {
+                "ext-event": "For better performance. "
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Workerman\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "walkor",
+                    "email": "walkor@workerman.net",
+                    "homepage": "http://www.workerman.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An asynchronous event driven PHP framework for easily building fast, scalable network applications.",
+            "homepage": "http://www.workerman.net",
+            "keywords": [
+                "asynchronous",
+                "event-loop"
+            ],
+            "time": "2019-04-05 10:35:31"
         }
     ],
     "packages-dev": [

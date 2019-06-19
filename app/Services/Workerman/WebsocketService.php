@@ -44,7 +44,7 @@ class WebsocketService
                 'msg'=>"欢迎新用户登录上线！",
                 'time'=>date('Y-m-d H:i:s'),
             ];
-            $data = json_encode($data, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
+            $data = json_encode($data, JSON_UNESCAPED_SLASHES);
             foreach ($this->connDataArr as $oneConn) {
                 $oneConn->send($data);
             }
@@ -63,7 +63,7 @@ class WebsocketService
                 if ($connect == $oneConn) {
                     continue;
                 }
-                $oneConn->send(json_encode($msgData, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE));
+                $oneConn->send(json_encode($msgData, JSON_UNESCAPED_UNICODE));
             }
         }
     }

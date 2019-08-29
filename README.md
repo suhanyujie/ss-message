@@ -7,3 +7,6 @@
 ## 依赖
 * [laravel-admin](https://github.com/z-song/laravel-admin)
 
+
+## 参考资料
+* jQuery 手册 https://www.jb51.net/shouce/jquery1.82/
